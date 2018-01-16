@@ -20,15 +20,15 @@ Gem::Specification.new do |gem|
   gem.rubygems_version = "1.8.10"
 
   gem.add_dependency "json", ">= 1.5.0"
-  gem.add_dependency "oauth", "~> 0.4.0"
+  gem.add_dependency "oauth"
 
-  gem.add_development_dependency "rake", "~> 10.0.4"
-  gem.add_development_dependency "jnunemaker-matchy", "~> 0.4.0"
-  gem.add_development_dependency 'shoulda', "~> 3.4.0"
-  gem.add_development_dependency 'mocha', "~> 0.13.3"
+  gem.add_development_dependency "rake"
+  gem.add_development_dependency "jnunemaker-matchy"
+  gem.add_development_dependency 'shoulda'
+  gem.add_development_dependency 'mocha'
   # shoulda-context blows up on ActiveSupport not being defined
   # on shoulda/context.rb:7
   # But then when you load active_support, shoulda-context decides
   # to load MiniTest
-  gem.add_development_dependency 'test-unit', "~>3.2.5"
+  gem.add_development_dependency 'test-unit'
 end
